@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Tailwind News</title>
+</head>
+
+<!-- Nav Area -->
+<nav class="flex items-center justify-between font-bold text-white mx-auto">
+
+    <div class="flex container justify-between gap-2 max-w-6xl mx-auto px-2 py-4">
+        <!-- Menu/Logo Container -->
+        
+            <div class="gap-4 flex">
+
+                    <img src="assets/images/logo.svg" alt="" id="logo" class="md:h-22 md:w-32">
+                </div>
+
+    <div class="h-10 font-inter hidden text-darkGrayishBlue font-light md:flex md:space-x-8  justify-between">
+        <div class="group">
+            <a href="#">Home</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-SoftOrange"> </div>
+        </div>
+        <div class="group">
+            <a href="#">New</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-SoftOrange"> </div>
+        </div>
+        <div class="group">
+            <a href="#">Popular</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-SoftOrange"> </div>
+        </div>
+        <div class="group">
+            <a href="#">Trending</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-SoftOrange"> </div>
+        </div>
+        <div class="group">
+            <a href="#">Categories</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-SoftOrange"> </div>
+        </div>
+    </div>
+
+    <!-- Hamburger Button -->
+
+    <button id="menu-btn" class="inline-block hamburger pt-2 focus:outline-none md:hidden">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+
+</div>
+</nav>
+
+<!--- Mobile Menu -->
+<div id="menu"
+    class="absolute hidden top-0 bottom-0 left-0 flex-col self-start items-center  justify-center w-1/2 min-h-screen py-1 pt-1 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+    <a href="#" class="hover:text-cyan-500">Home</a>
+    <a href="#" class="hover:text-cyan-500">New</a>
+    <a href="#" class="hover:text-cyan-500">Popular</a>
+    <a href="#" class="hover:text-cyan-500">Trending</a>
+    <a href="#" class="hover:text-cyan-500">Support</a>
+
+</div>
+
+</div>
+</nav>
+
+<body class="bg-offWhite min-h-screen p-2  font-inter mx-auto ">
+    <div class="bg-bg-mobile h-[350px] w-screen bg-no-repeat bg-center bg-auto md:hidden"></div>
+
+    <!-- Grid Wrapper For MD Screens -->
+    <div id='grid-container' class="md:grid md:grid-cols-3 md:gap-2 md:p-1">
+    <div class="md:col-span-3 md:row-span-2 bg-bg-desktop hidden md:inline-block md:h-60 md:w-screen md:bg-no-repeat md:bg-center md:bg-auto md:pb-5"></div>
+
+
+
+
+<!-- TextArea -->
+<div class="md:col-span-2 md:grid md:grid-cols-2 md:gap-2 md:mt-20 md:justify-center ">
+
+    <div class="md:order-1">
+        <h3 class="pt-4 font-inter font-bold text-5xl w-full break-words">The Bright</h3>
+        <span class="font-inter font-bold text-5xl w-full break-words">Future of Web</span>
+        <span class="font-inter font-bold pb-2 text-5xl w-full break-words">3.0?</span>
+    </div>
+
+
+    <div id="bottom-text" class="md:py-1 md:order-2 ">
+        <p class="text-darkGrayishBlue font-intert text-lg w-full pb-4">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+
+        <div class="py-4">
+            <button class="py-2 cursor-pointer h-[50px] w-full md:w-full bg-softRed uppercase font-bold text-offWhite tracking-wider"> R e a d m o r e </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Showcase Area -->
+<div class="pt-4 pb-4 pl-4 mx-auto mt-auto w-70 h-75 bg-veryDarkBlue ">
+    <span class="text-2xl font-bold text-SoftOrange text-left block mb-4">New</span>
+
+    <div class="gap-4">
+        <div class="">
+            <h3 class="pb-2 text-xl text-offWhite font-bold">Hydrogen VS Electric Cars</h3>
+            <p class="pb-2 text-lg text-grayishBlue break-words">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <div class="w-80 py-2 border-b-2 border-gray-500"></div>
+        </div>
+
+        <div class="col-span-1">
+            <h3 class="py-2 mt-2 text-xl text-offWhite font-bold">The Downsides of AI Artistry</h3>
+            <p class="pb-2 text-lg text-grayishBlue">What are the possible adverse effects of on-demand AI image generation?</p>
+            <div class="w-80 pb-3 mb-2 mt-2 border-b-2 border-gray-500"></div>
+            <h3 class="pb-2 mt-2 text-xl text-offWhite font-bold">Is VC Funding Drying Up?</h3>
+            <p class="text-lg text-grayishBlue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Bottom Area -->
+
+<section id="bottom" class="py-4">
+    <div id="boxes" class="mx-auto mt-auto pt-4 pb-4 pl-4 w-full h-75 bg-offWhite md:flex md:flex-row md:items-start md:justify-between md:pt-3">
+        <div id="box-1" class="flex pr-10 py-3 items-start justify-start gap-2 mr-2 md:w-1/3">
+            <div id="left-side" class="h-auto">
+                <img src="/assets/images/image-retro-pcs.jpg" alt="" class="inline-block w-25 h-32 md:w-full">
+            </div>
+            <div id="text-wrap" class="flex flex-col items-start justify-start px-2 md:w-full">
+                <div class="block font-bold text-2xl text-grayishBlue">01</div>
+                <div class="block font-bold text-veryDarkBlue pt-2">Reviving Retro PCs</div>
+                <p class="inline-block text-darkGrayishBlue w-full text-md pt-3 md:pt-0">What happens when old PCs are given modern upgrades?</p>
+            </div>
+        </div>
+    
+        <div id="box-2" class="flex pr-10 py-3 items-start justify-start gap-2 mr-2 md:w-1/3">
+            <div id="left-side" class="h-auto">
+                <img src="/assets/images/image-top-laptops.jpg" alt="" class="inline-block w-25 h-32 md:w-full">
+            </div>
+            <div id="text-wrap" class="flex flex-col items-start justify-start px-2 md:w-full">
+                <div class="block font-bold text-2xl text-grayishBlue">02</div>
+                <div class="block font-bold text-veryDarkBlue pt-2">Top 10 Laptops of 2022.</div>
+                <p class="inline-block text-darkGrayishBlue w-full text-md pt-3 md:pt-0">Our best picks for various needs and budgets</p>
+            </div>
+        </div>
+    
+        <div id="box-3" class="flex py-2 pr-10 items-start justify-start gap-2 md:w-1/3">
+            <div id="left-side" class="h-auto">
+                <img src="/assets/images/image-gaming-growth.jpg" alt="" class="inline-block w-25 h-32 md:w-full">
+            </div>
+            <div id="text-wrap" class="flex flex-col items-start justify-start px-2">
+                <div class="block font-bold text-2xl text-grayishBlue">03</div>
+                <div class="block font-bold text-veryDarkBlue pt-2">The Growth of Gaming</div>
+                <p class="block text-darkGrayishBlue w-full text-md pt-3">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+  
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+<script src="/js/script.js" defer></script>
+</body>
+
+</html>
